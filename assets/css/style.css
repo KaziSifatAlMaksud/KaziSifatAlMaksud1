@@ -461,7 +461,7 @@ section {
   overflow: hidden;
   border: 3px solid #eee;
   border-radius: 15px;
-  height: 200px;
+  height: 400px;
   width: 100%
 }
 
@@ -469,9 +469,10 @@ section {
   opacity: 0;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 0;
+
   width: 100%;
+  padding: 55px;
+  
   transition: opacity 0.5s ease;
 }
 
@@ -484,7 +485,7 @@ section {
   bottom: 0;
   left: 0;
   margin-top: 5px;
-  width: 100%;
+  width: 40%;
   z-index: 100;
 }
 
@@ -497,24 +498,34 @@ section {
   height: 60px;
 }
 
-.edu nav li {
+.edu nav li  {
   color: #777;
   cursor: pointer;
   flex: 1;
   padding: 10px;
   text-align: center;
 }
+.edu nav .active  {
+  color: #149ddd;
+  cursor: pointer;
+  border-bottom: #149ddd solid 3px;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
 
-.edu nav ul li p {
-  font-size: 12px;
+.edu nav ul li  {
+  font-size: 15px;
   margin: 2px 0;
 }
 
 .edu nav ul li:hover,
 nav ul li.active {
-  color: #8e44ad;
+  color:black;
 }
-
+.de{
+  display: none;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
