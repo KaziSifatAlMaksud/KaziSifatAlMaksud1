@@ -903,6 +903,30 @@ nav ul li.active {
 # Project
 --------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------
+# Download Resume
+--------------------------------------------------------------*/
+.dowResume .section-title .resume_btn{
+  
+  position: absolute;
+  padding: 12px 15px 12px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #149ddd;
+  color: #fff;
+  border: #149ddd solid 2px;
+  text-decoration: none;
+
+}
+.dowResume .section-title .resume_btn:hover {
+  
+  margin-top: 20px;
+  background-color: #20aaeb;
+  color: #fff;
+  border: #149ddd solid 2px;
+
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1097,6 +1121,8 @@ nav ul li.active {
     transform: rotate(360deg);
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
