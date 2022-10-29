@@ -14,10 +14,26 @@
  content color: #2c2c37
  btn: #2c2c37 
  footer:  #21222d*/
+ :root{
+  --bg-color: #040b14;
+  --txt-color:#d8d9e2;
+  --header-color: #2c2c37;
+  --footer-colo: #21222d;
+  --hover-btn:rgba(20, 157, 221, 0.95);
+}
+ 
+light-theme{
+  --bg-color: #fff;
+  --txt-color:#d8d9e2;
+  --header-color: #2c2c37;
+  --footer-colo: #21222d;
+  --hover-btn:rgba(20, 157, 221, 0.95);
+  
+}
 body {
   font-family: "Open Sans", sans-serif;
-  background-color:#040b14 !important;
-  color: #d8d9e2!important;
+  background-color:var(--bg-color)!important;
+  color: var(--txt-color)!important;
  
 }
 
@@ -476,10 +492,11 @@ section {
 .edu {
   position: relative;
   overflow: hidden;
-  border: 3px solid #eee;
+  border: 3px solid var(--txt-color);
   border-radius: 15px;
   height: 400px;
-  width: 100%
+  width: 100%;
+  
 }
 
 .edu .content {
@@ -507,7 +524,8 @@ section {
 }
 
 .edu nav ul {
-  background-color: #fff;
+  background-color: var(--header-color);
+  border-radius: 0 20px 0 0;
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -516,10 +534,11 @@ section {
 }
 
 .edu nav li  {
-  color: #777;
+  color: var(--txt-color);
   cursor: pointer;
   flex: 1;
   padding: 10px;
+ 
   text-align: center;
 }
 .edu nav .active  {
@@ -536,9 +555,11 @@ section {
   margin: 2px 0;
 }
 
-.edu nav ul li:hover,
+.edu nav ul li:hover{
+  color:var(--hover-btn);
+}
 nav ul li.active {
-  color:black;
+  color:  var(--hover-btn)
 }
 .de{
   display: none;
@@ -616,7 +637,8 @@ nav ul li.active {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: var(--header-color);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -629,7 +651,7 @@ nav ul li.active {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--txt-color);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
