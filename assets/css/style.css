@@ -7,9 +7,18 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* night mode
+ nav color: #2c2c37
+ color: #272829;
+ background-color: #2c2c37
+ content color: #2c2c37
+ btn: #2c2c37 
+ footer:  #21222d*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  background-color:#040b14 !important;
+  color: #d8d9e2!important;
+ 
 }
 
 a {
@@ -77,7 +86,7 @@ h6 {
   z-index: 9997;
   transition: all 0.8s;
   padding: 2% 15px;
-  background: #040b14;
+  background: #2c2c37;
   overflow-y: auto;
 }
 #header .profile{
@@ -816,6 +825,8 @@ nav ul li.active {
   font-size: 14px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -910,10 +921,25 @@ nav ul li.active {
 /*--------------------------------------------------------------
 # Project
 --------------------------------------------------------------*/
+.project{
+  width: 100%;
+}
 .project .card{
-  width: 30%;
-    margin: 10px;
-    background-color: #149ddd;
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #2c2c37;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.project .card:hover{
+
+  
+  background: #040b14;
+  color: #fff;
+  width: 100%;
+  transition: .10s;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 1);
 }
 
 /*--------------------------------------------------------------
@@ -1198,7 +1224,7 @@ nav ul li.active {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #040b14;
+  background: #21222d;
 }
 
 
