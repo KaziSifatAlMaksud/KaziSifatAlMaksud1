@@ -262,7 +262,7 @@ h6 {
   height: 100vh;
   background-size: cover;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  padding-left: 200px;
+  padding-left: 10%;
 
 }
 
@@ -733,7 +733,8 @@ nav ul li.active {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 100px;
+  height: 77vh;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1191,7 +1192,7 @@ nav ul li.active {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
+  background: #14365D;
 }
 
 .breadcrumbs h2 {
@@ -1242,6 +1243,7 @@ nav ul li.active {
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  
   padding: 45px;
   color: #f4f6fd;
   font-size: 14px;
@@ -1261,9 +1263,9 @@ nav ul li.active {
 
 
 @media (max-width: 1199px) {
-  /* #footer {
-    display: none;
-  } */
+  #footer {
+    position: relative;
+  }
 }
 /*Star Animation Start*/
 
