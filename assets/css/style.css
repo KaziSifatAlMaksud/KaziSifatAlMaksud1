@@ -998,8 +998,11 @@ nav ul li.active {
 }
 
 .contact .info {
-  padding: 30px;
-  background: #fff;
+  background-color: #2a2d3a!important;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 2rem;
+  border-radius: 2%;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -1025,12 +1028,30 @@ nav ul li.active {
   margin-bottom: 5px;
   color: #050d18;
 }
+.form-container input,textarea{
+  background-color: #2a2d3a!important;
+  color: #fff!important; 
+ 
+}
+.form-container form{
+  background-color: #2a2d3a!important;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 2rem;
+  border-radius: 2%;
+  text-align: center;
+}
+.keep_in_touch{
+  height: 200px;
+  margin-top: 80px;
+}
+
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #fff;
 }
 
 .contact .info .email p {
