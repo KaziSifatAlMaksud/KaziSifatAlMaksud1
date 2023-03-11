@@ -734,7 +734,7 @@ nav ul li.active {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 100px;
-  height: 77vh;
+  height: 80vh;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1245,6 +1245,9 @@ nav ul li.active {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+  .portfolio-details{
+    height: 200vh;
+  }
   
 
   .breadcrumbs ol {
@@ -1286,6 +1289,9 @@ nav ul li.active {
 @media (max-width: 1199px) {
   #footer {
     position: relative;
+  }
+  .portfolio-details{
+    height: 200vh;
   }
 }
 /*Star Animation Start*/
