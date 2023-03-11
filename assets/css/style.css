@@ -1264,7 +1264,7 @@ nav ul li.active {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  
+  position: relative;
   padding: 45px;
   color: #f4f6fd;
   font-size: 14px;
