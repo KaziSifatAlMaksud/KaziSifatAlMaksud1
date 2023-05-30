@@ -1,33 +1,3 @@
-<?php
-include 'components/connect.php';
-$message = ''; // Initialize an empty message variable
-
-if(isset($_POST['send'])){
-   $name = $_POST['name'];
-   $name = filter_var($name, FILTER_SANITIZE_STRING);
-   $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING);
-   $number = $_POST['text'];
-   $number = filter_var($number, FILTER_SANITIZE_STRING);
-   $msg = $_POST['msg'];
-   $msg = filter_var($msg, FILTER_SANITIZE_STRING);
-
-   $select_message = $conn->prepare("SELECT * FROM `messages` WHERE name = ? AND email = ? AND number = ? AND message = ?");
-   
-    $select_message->execute(array($name, $email, $text, $msg));
-
-
-  if($select_message->rowCount() > 0){
-      $message = 'Already sent message!';
-   }else{
-      $insert_message = $conn->prepare("INSERT INTO `messages`(name, email, text, message) VALUES(?,?,?,?)");
-      $insert_message->execute(array($name, $email, $text, $msg));
-
-      $message = 'Sent message successfully!';
-   }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -912,74 +882,66 @@ I love to eat new technologies so always active to Learn new things and touch on
          
     </section><!-- End Download resume Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+     <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Me!</h2>
+      </div>
 
-        
-
-        <div class="section-title">
-          <h2>Contact Me !</h2>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5  d-flex align-items-stretch ">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <p><strong>Location:</strong> Dhaka, Aftablenogor,Dhaka </p>
-              </div>
-
-              <div class="email">
-                <i class="bx bxl-linkedin"></i>    
-                <p style="padding-top: 5px;"><strong>linkedin:</strong> in/kazisifatalmaksud/</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <p> <strong> Call: </strong> +88015 3724 4273</p>
-              </div>
-              <div class="keep_in_touch" action="mailto: kazi.sifat2013@gmail.com">
-                <h1>Keep in touch</h1>
-                <p style="padding: 0; padding-top: 15px;">My Inbox here, is always open. You can reach me through this website, my E-mail or linkedin. I'll try my best to reply as fast as possible!</p>
-                <form action="mailto:kazi.sifat2013@gmail.com" >
-                  <input type="submit" class="resume_btn" value="Email Me !">
-               </form>
-              </div>
+      <div class="row" data-aos="fade-in">
+        <div class="col-lg-5  d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <p><strong>Location:</strong> Dhaka, Aftablenogor, Dhaka</p>
+            </div>
+            <div class="email">
+              <i class="bx bxl-linkedin"></i>
+              <p style="padding-top: 5px;"><strong>linkedin:</strong> in/kazisifatalmaksud/</p>
+            </div>
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <p><strong>Call:</strong> +88015 3724 4273</p>
+            </div>
+            <div class="keep_in_touch">
+              <h1>Keep in touch</h1>
+              <p style="padding: 0; padding-top: 15px;">
+                My Inbox here is always open. You can reach me through this website, my E-mail, or LinkedIn.
+                I'll try my best to reply as fast as possible!
+              </p>
+              <form action="mailto:kazi.sifat2013@gmail.com">
+                <input type="submit" class="resume_btn" value="Email Me!">
+              </form>
             </div>
           </div>
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch form-container">
-            <form action="" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="text" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="msg" rows="10" required></textarea>
-              </div>
-              <?php if(!empty($message)): ?>
-              <div class="alert alert-success mt-4"><?php echo $message; ?></div>
-              <?php endif; ?>
-              <input class="text-center"value="Send Message" name="send"></div>
-            </form>
-          </div>
-
         </div>
-
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch form-container">
+          <form action="submit_form.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <input type="submit" class="text-center btn btn-primary" value="Send Message" name="send">
+          </form>
+        </div>
       </div>
-    </section><!-- End Contact Section -->
+    </div>
+  </section><!-- End Contact Section -->
 
     <!-- ======= Footer ======= -->
   <footer id="contact" class="footer">
