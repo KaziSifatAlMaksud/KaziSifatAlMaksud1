@@ -1,3 +1,33 @@
+<?php
+include 'components/connect.php';
+$message = ''; // Initialize an empty message variable
+
+if(isset($_POST['send'])){
+   $name = $_POST['name'];
+   $name = filter_var($name, FILTER_SANITIZE_STRING);
+   $email = $_POST['email'];
+   $email = filter_var($email, FILTER_SANITIZE_STRING);
+   $number = $_POST['text'];
+   $number = filter_var($number, FILTER_SANITIZE_STRING);
+   $msg = $_POST['msg'];
+   $msg = filter_var($msg, FILTER_SANITIZE_STRING);
+
+   $select_message = $conn->prepare("SELECT * FROM `messages` WHERE name = ? AND email = ? AND number = ? AND message = ?");
+   
+    $select_message->execute(array($name, $email, $text, $msg));
+
+
+  if($select_message->rowCount() > 0){
+      $message = 'Already sent message!';
+   }else{
+      $insert_message = $conn->prepare("INSERT INTO `messages`(name, email, text, message) VALUES(?,?,?,?)");
+      $insert_message->execute(array($name, $email, $text, $msg));
+
+      $message = 'Sent message successfully!';
+   }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -920,7 +950,7 @@ I love to eat new technologies so always active to Learn new things and touch on
             </div>
           </div>
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch form-container">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -933,18 +963,16 @@ I love to eat new technologies so always active to Learn new things and touch on
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="text" id="subject" required>
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="msg" rows="10" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <?php if(!empty($message)): ?>
+              <div class="alert alert-success mt-4"><?php echo $message; ?></div>
+              <?php endif; ?>
+              <input class="text-center"value="Send Message" name="send"></div>
             </form>
           </div>
 
