@@ -29,6 +29,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color:var(--bg-color)!important;
   color: var(--txt-color)!important;
+  overflow-x: hidden;
  
 }
 
@@ -296,6 +297,7 @@ h6 {
   background-size: cover;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   padding-left: 10%;
+
 
 }
 
