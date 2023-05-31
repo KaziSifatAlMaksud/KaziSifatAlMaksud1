@@ -6,6 +6,15 @@
 */
 (function() {
   "use strict";
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
 
   /**
    * Easy selector helper function
@@ -36,16 +45,6 @@
   /**
    * Easy on scroll event listener 
    */
-  /*
-  Pre loader */
-
-window.addEventListener('load', function() {
-    var loader = document.querySelector('.loader');
-    loader.style.display = 'none';
-});
-
-    /*
-  end Pre loader */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }

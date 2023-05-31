@@ -1,9 +1,4 @@
-/**
-* Template Name: iPortfolio - v3.9.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -37,23 +32,40 @@ body {
  
 }
 
-/* Pre loader*/ 
-.loader {
+/*-----------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
-  animation: spin 2s linear infinite;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  backdrop-filter: blur(1px); /* Apply a blur effect to the background */
+  transition: all 0.6s ease-out;
 }
 
-@keyframes spin {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #fff;
+  border-color: var(--hover-btn) transparent  var(--hover-btn) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*end pre laoder*/
