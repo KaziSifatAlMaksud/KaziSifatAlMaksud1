@@ -77,8 +77,7 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-boxes"></i> <span>Skills</span></a></li>
-          <li><a href="#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>
-         
+          <li><a href="#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>         
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#uprojects" class="nav-link scrollto"><i class="bi bi-kanban"></i> <span>Mini Projects</span></a></li>
           <li><a href="#awrd" class="nav-link scrollto"> <i class="bi bi-award"></i> <span>Awards</span></a></li>
@@ -250,18 +249,25 @@
         </ul>
       </nav>
       
-      <div class="content show">       
-          <p><b>Bachelor Of Science</b> </p>
+      <div class="content show" style="display: flex;">
+        <div class="education-details" style="flex: 1; width: 40%;">
+          <p><b>Bachelor Of Science</b></p>
           <h1>East West University</h1>
-          <p> September 8 2019 - 2023</p>
+          <p>September 8, 2019 - 2023</p>
           <ul>
             <li>Undergraduated from Computer Science & Engineering Department</li>
             <li>Completed 119 Credit</li>
-            <li>Major in Sofware Engineering</li>
+            <li>Major in Software Engineering</li>
             <li>CGPA 3.35 out of 4.00 After Finishing 11th Semester.</li>
           </ul>
-        
+        </div>
+        <div class="chart-container" style=" margin-left: 50dx; border: #fff solid 2px; border-radius: 10px; padding: 10px; display: flex; justify-content: flex-end; @media (max-width: 768px) { display: none; }">
+          <canvas id="lineChart" style="width: 70%; height: 250px;"></canvas>
+        </div>
+
       </div>
+      
+      
       <div class="content">       
         <p><b>Higher Secondary Certificate</b> </p>
         <h1>Ajit Guha College Cumilla</h1>
@@ -270,7 +276,7 @@
             <li>From Science Group</li>
             <li>GPA 3.33 Out of 5.00</li>
           </ul>
-         
+          <canvas id="lineChart"></canvas>
       </div>
       <div class="content"> 
         <p><b>Secondary School Certificate</b> </p>
@@ -367,6 +373,16 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap ">
+              <img src="assets/img/portfolio/portfolio-15.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-15.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Indoor Nevigation System App"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/KaziSifatAlMaksud/Indoor-Navigation-Node_map" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap ">
               <img src="assets/img/portfolio/gshop.png" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gadget Shop Mobile App"><i class="bx bx-plus"></i></a>
@@ -374,6 +390,8 @@
               </div>
             </div>
           </div>
+
+ 
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
@@ -389,7 +407,7 @@
               <img src="assets/img/portfolio/portfolio-13.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-13.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tik Tak Toe Mobile App Game"><i class="bx bx-plus"></i></a>
-                <a href="https://kazisifatalmaksud.github.io/github.oi/" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/KaziSifatAlMaksud/Mobile-Programming" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -398,7 +416,7 @@
               <img src="assets/img/portfolio/portfolio-14.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-14.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Contact List App"><i class="bx bx-plus"></i></a>
-                <a href="https://kazisifatalmaksud.github.io/github.oi/" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/KaziSifatAlMaksud/Mobile-Programming" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -508,7 +526,7 @@
                              
                   <div class="resume-item">
                     <h4 style="color: #fff;">A+ Category Award</h4>
-                    <h5 style="color: black;">02 May, 2017</h5>
+                    <h5 style="color: black;">16 January, 2017</h5>
                     <ul>
                       <li>Issued by Digital Innovation Fair-2017</li>
                       <li>For  Solar Street Light System with Light Sensor Technology</li>
@@ -627,7 +645,7 @@
         <div class="card-body">
           <div class="card-body">
 
-            <a href="https://github.com/KaziSifatAlMaksud/Cafe-Shop-Management-System" target ="blank" style="font-size:30px;"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/KaziSifatAlMaksud/RFID-Base-Attendance-System" target ="blank" style="font-size:30px;"><i class="bi bi-github"></i></a>
               </br></br>
             <h5 class="card-title">Computer Architecture</h5>
             <p class="card-text">In this project we implement a microprocessor (8051) based attendance system
@@ -635,7 +653,7 @@
               classroom through swipe their id card in the RFID system.</p>
             <p class="card-text"><small class="text-muted">  uVision5 IDE-Keil | Proteus </small></p>
             <p class="card-text"><small class="text-muted"><b>Project Name: </b>Microprocessor based automatic attendance recorder with RFID system</small></p>
-            <p class="card-text"><a href="https://github.com/KaziSifatAlMaksud/Cafe-Shop-Management-System" class="text-muted"> <i class="bi bi-folder">   </i> CSE360 Computer Architecture</a></p>
+            <p class="card-text"><a href="https://github.com/KaziSifatAlMaksud/RFID-Base-Attendance-System" class="text-muted"> <i class="bi bi-folder">   </i> CSE360 Computer Architecture</a></p>
           </div>  
         </div>
       </div>
@@ -830,6 +848,49 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Get the canvas element
+    const canvas = document.getElementById('lineChart');
+  
+    // Create the chart context
+    const ctx = canvas.getContext('2d');
+  
+    // Define the data for the chart
+    const data = {
+      labels: ['Fall-2019', 'Spring-2020', 'Summer-2020', 'Fall-2020', 'Spring-2021', 'Summer-2021', 'Fall-2021', 'Spring-2022', 'Summer-2022', 'Fall-2022', 'Spring-2023'],
+      datasets: [
+        {
+          label: 'CGPA',
+          data: [2.70, 2.45, 2.81,2.91, 3.04, 3.15, 3.24, 3.26, 3.30, 3.33, 3.35],
+          borderColor: '#fff',
+          fill: false
+        }
+      ]
+    };
+  
+    // Create the line chart
+    new Chart(ctx, {
+      type: 'line',
+      data: data,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: {
+           // beginAtZero: true,
+            min: 2.00,
+            max: 3.60,
+
+            stepSize: 0.01
+          }
+        }
+      }
+    });
+  </script>
+  
+
+
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
