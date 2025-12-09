@@ -1,375 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio - Kazi Sifat Al Maksud</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Portfolio - Kazi Sifat Al Maksud</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../assets/img/fabicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../assets/img/fabicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/img/fabicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/img/fabicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../assets/img/fabicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../assets/img/fabicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../assets/img/fabicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../assets/img/fabicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/fabicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/img/fabicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/fabicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/img/fabicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/fabicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/fabicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="../assets/img/fabicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../assets/img/fabicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/fabicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../assets/img/fabicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="../assets/img/fabicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../assets/img/fabicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="../assets/img/fabicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/fabicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/fabicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/fabicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/fabicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/fabicon/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- fontawesome css -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <!-- fontawesome css -->
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-<body>
-   <!-- <div id="preloader"></div>  -->
+    <!-- Glassmorphism Custom CSS -->
+    <style>
+      body {
+        background: url("../assets/img/bg.jpg") center/cover no-repeat fixed;
+        font-family: "Poppins", sans-serif;
+      }
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+      /* Add spacing between portfolio items */
+      .portfolio-item {
+        padding: 15px !important; /* space inside columns */
+        max-height: 450px !important;
+      }
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+      /* Increase row gap */
+      .portfolio-container {
+        row-gap: 25px !important; /* vertical spacing */
+        column-gap: 0px !important; /* horizontally controlled by col- classes */
+      }
 
-      <div class="profile mb-1">
-        <img src="../assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Kazi Sifat Al Maksud</a></h1>
-        <div class="social-links mt-3 text-center">
-          
-          <a href="https://www.facebook.com/profile.php?id=100008690524341" class="facebook" target="blank"><i class="bx bxl-facebook" ></i></a>
-          <a href="https://github.com/KaziSifatAlMaksud" class="Github" target="blank" ><i class="bi bi-github" ></i></a>
-          <a href="https://twitter.com/maksud_sifat" class="twitter" target="blank"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/kazi-sifat-al-maksud-871b13197/" class="linkedin" target="blank"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
+      /* Glass sidebar like other pages */
+      #header {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+      }
 
-      <nav id="navbar" class=" mt-1 nav-menu navbar">
-        <ul>
-          <li><a href="../index.html#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="../index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="skill.html" class="nav-link scrollto"><i class="bi bi-boxes"></i> <span>Skills</span></a></li>
-          <li><a href="education.html" class="nav-link scrollto"><i class="bi bi-mortarboard"></i> <span>Education</span></a></li>         
-          <li><a href="portfolio.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="mini_project.html" class="nav-link scrollto"><i class="bi bi-kanban"></i> <span>Mini Projects</span></a></li>
-          <li><a href="awards.html" class="nav-link scrollto"> <i class="bi bi-award"></i> <span>Awards</span></a></li>
-          <li><a href="extracurricular.html" class="nav-link scrollto"><i class="bi bi-activity"></i> <span>Extracurricular Activity</span></a></li>        
-          <li><a href="contact_now.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact / Resume</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+      /* Glass main container */
+      .glass-box {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        padding: 30px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        margin-top: 30px;
+      }
 
-  <main id="main"> 
-  <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
+      .section-title {
+        padding-bottom: 20px;
+      }
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>I have spent a lot of time on different projects. I try to do everything from scratch. Here are some of my favorite ones which sum up my knowledge. I have done many projects from different courses and challenges to learn the basics. You can check them on my <a style="text-decoration: none;" href="https://github.com/KaziSifatAlMaksud">Github</a>.</p>
-        </div>
+      .section-title h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      }
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-lara">Laravel</li>
-              <li data-filter=".filter-flask">Flask</li>
-              <li data-filter=".filter-php">PHP</li>
-              <li data-filter=".filter-react">React</li>
-              <li data-filter=".filter-oracle">Oracle</li>              
-              <li data-filter=".filter-app">App</li>
-            </ul>
+      .section-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #149ddd;
+        bottom: 0;
+        left: 0;
+      }
+
+      .section-title p {
+        color: #e4e4e4;
+        margin-bottom: 0;
+      }
+
+      p,
+      li {
+        color: #fff;
+      }
+
+      /* Portfolio filters glass style */
+      #portfolio-flters {
+        padding: 0;
+        margin: 10px 0px !important;
+        list-style: none;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 6px 10px;
+      }
+
+      #portfolio-flters li {
+        cursor: pointer;
+        padding: 6px 14px;
+        font-size: 13px;
+        gap: 20px;
+        font-weight: 500;
+        color: #f1f1f1;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+      }
+
+      #portfolio-flters li:hover,
+      #portfolio-flters li.filter-active {
+        background: rgba(20, 157, 221, 0.5);
+        color: #fff;
+      }
+
+      /* Glass cards for all portfolio items */
+      .portfolio .portfolio-wrap {
+        position: relative;
+        height: 360px;
+        overflow: hidden;
+        border-radius: 18px;
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .portfolio .portfolio-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .portfolio .portfolio-links {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: rgba(0, 0, 0, 0.55);
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .portfolio .portfolio-wrap:hover .portfolio-links {
+        opacity: 1;
+      }
+
+      .portfolio .portfolio-links a {
+        color: #fff;
+        font-size: 26px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(20, 157, 221, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .portfolio .portfolio-links a:hover {
+        transform: translateY(-2px);
+        background: rgba(20, 157, 221, 1);
+      }
+
+      .portfolio .img-fluid {
+        border-radius: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div id="preloader"></div>  -->
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile mb-1">
+          <img
+            src="../assets/img/profile-img.png"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light">
+            <a href="index.html">Kazi Sifat Al Maksud</a>
+          </h1>
+          <div class="social-links mt-3 text-center">
+            <a
+              href="https://www.facebook.com/profile.php?id=100008690524341"
+              class="facebook"
+              target="blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://github.com/KaziSifatAlMaksud"
+              class="Github"
+              target="blank"
+              ><i class="bi bi-github"></i
+            ></a>
+
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a
+              href="https://www.linkedin.com/in/kazi-sifat-al-maksud-871b13197/"
+              class="linkedin"
+              target="blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
           </div>
         </div>
 
-        <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100"> -->
-          
-        
+        <!-- Navbar -->
+        <nav id="navbar" class="nav-menu navbar mt-3">
+          <ul>
+            <li>
+              <a href="../index.html#hero" class="nav-link"
+                ><i class="bx bx-home"></i> <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="../index.html#about" class="nav-link"
+                ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="skill.html" class="nav-link"
+                ><i class="bi bi-boxes"></i> <span>Skills</span></a
+              >
+            </li>
+            <li>
+              <a href="education.html" class="nav-link"
+                ><i class="bi bi-mortarboard"></i> <span>Education</span></a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="nav-link active"
+                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+              >
+            </li>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+            <li>
+              <a href="contact_now.html" class="nav-link"
+                ><i class="bx bx-envelope"></i> <span>Contact / Resume</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+    <main id="main">
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="glass-box" data-aos="fade-up">
+            <div class="section-title">
+              <h2>Portfolio</h2>
+              <p>
+                I have spent a lot of time on different projects. I try to do
+                everything from scratch. Here are some of my favorite ones which
+                sum up my knowledge. I have done many projects from different
+                courses and challenges to learn the basics. You can check them
+                on my
+                <a
+                  style="text-decoration: none"
+                  href="https://github.com/KaziSifatAlMaksud"
+                  target="_blank"
+                  >Github</a
+                >.
+              </p>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-lara">Laravel</li>
+                  <li data-filter=".filter-flask">Flask</li>
+                  <li data-filter=".filter-php">PHP</li>
+                  <li data-filter=".filter-react">React</li>
+                  <li data-filter=".filter-oracle">Oracle</li>
+                  <li data-filter=".filter-app">App</li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="row portfolio-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
                 <div class="portfolio-wrap">
-                  <img src="../assets/img/portfolio/Screenshot 2025-04-28 144648.png" class="img-fluid" alt="">
+                  <img
+                    src="../assets/img/portfolio/Screenshot 2025-04-28 144648.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                   <div class="portfolio-links">
-                    <a href="../assets/img/Screenshot 2025-04-28 144648.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NandiFoods ERP System Dashbord"><i class="bx bx-plus"></i></a>
+                    <a
+                      href="../assets/img/portfolio/Screenshot 2025-04-28 144648.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="NandiFoods ERP System Dashboard"
+                      ><i class="bx bx-plus"></i
+                    ></a>
                     <!-- <a href="../iconic.ht" title="More Details"><i class="bx bx-link"></i></a> -->
                   </div>
                 </div>
-            </div>
+              </div>
 
-            
-            <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/flashpainting.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="../assets/img/portfolio/flashpainting.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Flash Painting Services Office Website"><i class="bx bx-plus"></i></a>
-                  <a href="https://flashpainting.com.au/" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/flashpainting.jpeg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/flashpainting.jpeg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Flash Painting Services Office Website"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="https://flashpainting.com.au/" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/agentic.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="../assets/img/portfolio/agentic_full.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Random Trees Offical Website Landing Page"><i class="bx bx-plus"></i></a>
-                  <a href="https://randomtrees1.netlify.app/" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/agentic.jpeg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/agentic_full.jpeg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Random Trees Official Website Landing Page"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://randomtrees1.netlify.app/"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/primom - Copy.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/primom.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Prismic Offical Website Landing Page"><i class="bx bx-plus"></i></a>
-                <a href="https://prismicside.netlify.app/" title="More Details"><i class="bx bx-link"></i></a>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/primom - Copy.jpeg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/primom.jpeg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Prismic Official Website Landing Page"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://prismicside.netlify.app/"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/iconic (1).png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/iconic (1).png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Iconic Engineering Office Website"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="../iconic.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/suvastu.jpeg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/suvastu.jpeg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Suvastu Properties Ltd. Office Website"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="../" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-21.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/Eternal Massages.webp"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Eternal Messages"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://github.com/KaziSifatAlMaksud/eternalmessages"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/Orderr360.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/Orderr360.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Orderr360"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://github.com/KaziSifatAlMaksud/paint_order360"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-flask">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-9.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-9.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Gadget Shop Management System"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="../Gshop.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-8.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-8.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Cafe Shop Management System"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="../CafeShop.html" title="Cafe Shop"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-15.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-15.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Indoor Navigation System App"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://github.com/KaziSifatAlMaksud/Indoor-Navigation-Node_map"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/gshop.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-11.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Gadget Shop Mobile App"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a href="../gShopApp.html" title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-13.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-13.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Tic Tac Toe Mobile Game"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://github.com/KaziSifatAlMaksud/Mobile-Programming"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-14.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-14.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Contact List App"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://github.com/KaziSifatAlMaksud/Mobile-Programming"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-4.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-4.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="E-Commerce Website"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://elated-einstein-bed2e0.netlify.app/"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-oracle">
+                <div class="portfolio-wrap">
+                  <img
+                    src="../assets/img/portfolio/portfolio-6.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-links">
+                    <a
+                      href="../assets/img/portfolio/portfolio-6.jpg"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="FIFA World Cup 2022 DB Project"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                    <a
+                      href="https://github.com/KaziSifatAlMaksud/FIFA_WORLDCUP_2022_FINAL_DATABASE-PROJECT"
+                      title="More Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <!-- /glass-box -->
         </div>
+      </section>
+      <!-- End Portfolio Section -->
 
-        
-          
-            <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
-                <div class="portfolio-wrap">
-                  <img src="../assets/img/portfolio/iconic (1).png" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="../assets/img/portfolio/iconic (1).png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Iconic Engineering Office Website."><i class="bx bx-plus"></i></a>
-                    <a href="../iconic.html" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-            </div>
-
-             <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
-                <div class="portfolio-wrap">
-                  <img src="../assets/img/portfolio/suvastu.jpeg" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="../assets/img/portfolio/suvastu.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Suvastu Properties Ltd. Office Website."><i class="bx bx-plus"></i></a>
-                    <a href="../" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
-                <div class="portfolio-wrap">
-                  <img src="../assets/img/portfolio/portfolio-21.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="../assets/img/portfolio/Eternal Massages.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Eternal Messages"><i class="bx bx-plus"></i></a>
-                    
-                    <a href="https://github.com/KaziSifatAlMaksud/eternalmessages" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-lara">
-                <div class="portfolio-wrap">
-                  <img src="../assets/img/portfolio/Orderr360.png" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="../assets/img/portfolio/Orderr360.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Orderr360"><i class="bx bx-plus"></i></a>
-                    <a href="https://github.com/KaziSifatAlMaksud/paint_order360" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-            </div>
-    
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-flask">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gadget Shop Management System"><i class="bx bx-plus"></i></a>
-                <a href="../Gshop.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="../CafeShop.html" title="Cafe Shop"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap ">
-              <img src="../assets/img/portfolio/portfolio-15.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-15.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Indoor Nevigation System App"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/KaziSifatAlMaksud/Indoor-Navigation-Node_map" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap ">
-              <img src="../assets/img/portfolio/gshop.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gadget Shop Mobile App"><i class="bx bx-plus"></i></a>
-                <a href="../gShopApp.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
- 
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Event Management Mobile App"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/KaziSifatAlMaksud/Event_Management_App" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-13.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-13.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tik Tak Toe Mobile App Game"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/KaziSifatAlMaksud/Mobile-Programming" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-14.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-14.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Contact List App"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/KaziSifatAlMaksud/Mobile-Programming" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="coffee shop frontend design with bootstrap"><i class="bx bx-plus"></i></a>
-                <a href="https://kazisifatalmaksud.github.io/github.oi/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="../portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="https://happy-noether-b97047.netlify.app/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="E-Commerce Web Side"><i class="bx bx-plus"></i></a>
-                <a href="https://elated-einstein-bed2e0.netlify.app/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-<!-- 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="https://kazisifatalmaksud.github.io/sunnyside-Responsive-project/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-oracle">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/KaziSifatAlMaksud/FIFA_WORLDCUP_2022_FINAL_DATABASE-PROJECT" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
+      <!-- ======= Footer ======= -->
+      <footer id="contact" class="footer">
+        <div class="container">
+          <div class="credits">
+            <p>
+              Designed by BootstrapMade <br />
+              Customized &amp; Built by
+              <a><strong>Kazi Sifat Al Maksud</strong></a> &copy; Copyright 2023
+            </p>
           </div>
         </div>
-      </div>
-    </section><!-- End Portfolio Section -->
+      </footer>
+      <!-- End  Footer -->
+    </main>
+    <!-- End #main -->
 
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  
+    <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- ======= Footer ======= -->
-  <footer id="contact" class="footer">
-    <div class="container">
-      
-      <div class="credits">
-         <p>Designed by BootstrapMade <br> Customized & Built by <a><strong>Kazi Sifat Al Maksud</strong></a> &copy; Copyright 2023</p>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  </main><!-- End #main -->
-
- 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
-
-
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/typed.js/typed.min.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
