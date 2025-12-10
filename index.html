@@ -310,7 +310,7 @@
         <nav id="navbar" class="nav-menu navbar mt-3">
           <ul>
             <li>
-              <a href="../index.html#hero" class="nav-link"
+              <a href="../index.html#hero" class="nav-link active"
                 ><i class="bx bx-home"></i> <span>Home</span></a
               >
             </li>
@@ -330,7 +330,7 @@
               >
             </li>
             <li>
-              <a href="page/portfolio.html" class="nav-link active"
+              <a href="page/portfolio.html" class="nav-link "
                 ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
               >
             </li>
@@ -347,12 +347,13 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
+
+      <section id="hero" class="d-flex flex-column justify-content-center">
       <div
         class="container"
         data-aos="zoom-in"
         data-aos-delay="100"
-        style="text-align: left"
+        style="text-align: left;"
       >
         <h1>Kazi Sifat Al Maksud</h1>
 
@@ -360,11 +361,32 @@
           I'm
           <span
             class="typed"
-            data-typed-items="Laravel Developer, PHP Developer, Android App Developer, Full Stack Web Developer, Photographer"
+            data-typed-items="Laravel Developer, PHP Developer, Flutter/Android App Developer, Full Stack Web Developer"
           ></span>
         </p>
 
-        <p style="max-width: 90%">
+        <p
+          id="bioText"
+          style="
+            max-width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+          "
+          onclick="
+            const el = this;
+            if (el.style.webkitLineClamp === '2') {
+              el.style.webkitLineClamp = 'unset';
+              el.style.display = 'block';
+            } else {
+              el.style.webkitLineClamp = '2';
+              el.style.display = '-webkit-box';
+            }
+          "
+        >
           I am a PHP/Laravel developer with over 2 years of experience. I hold
           both an MSc and a BSc in Computer Science and Engineering. With the
           blessings of Almighty Allah, I have pursued my career as a Software
@@ -372,6 +394,8 @@
         </p>
       </div>
     </section>
+
+
 
     <!-- End Hero -->
 
@@ -383,21 +407,8 @@
             <h2>About ME</h2>
             <h4>Hello! I'm Sifat</h4>
             <p>
-              Currently, I work at Suvastu Properties Limited as an Executive in
-              the Software - Technology department. My main responsibility is to
-              manage and develop the ERP system. I am also currently pursuing my
-              MSc degree in Computer Science and Engineering at Jahangirnagar
-              University. Previously, I completed my undergraduate degree in
-              Computer Science and Engineering from East West University in
-              Dhaka, Bangladesh. During my four years of study, I gained
-              valuable programming experience through various projects. I have a
-              strong interest in web development and enjoy coding in multiple
-              languages. Additionally, I am passionate about learning
-              cutting-edge technologies. I believe in surrounding myself with
-              positive and productive individuals and embodying values such as
-              honesty, decency, discipline, and sincerity. My goal is to reach
-              my full potential and make a lasting impact in the field before my
-              journey ends.
+              I am a Software Executive at Suvastu Properties Limited, managing and developing the ERP system. I am pursuing an MSc in Computer Science and Engineering at Jahangirnagar University, with a BSc from East West University. I have strong experience in web development, programming, and working with multiple technologies. Passionate about learning cutting-edge tech, I value honesty, discipline, and continuous growth, aiming to make a lasting impact in the field.
+
             </p>
           </div>
 
@@ -405,20 +416,18 @@
             <div class="col-lg-4" data-aos="fade-right">
               <img
                 src="assets/img/profile-img2.jpg"
-                class="img-fluid mx-auto d-block rounded-circle"
+                class="img-fluid mx-auto d-block "
                 alt="Kazi Sifat Al Maksud"
                 width="300"
+                style="border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);"
               />
+
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>Web Developer &amp; Android App Developer</h3>
+              <h3 class=" text-light">Web Developer &amp; Flutter/Android App Developer</h3>
               <p class="fst-italic">
-                I am a web developer experienced in both front-end and back-end
-                development using PHP, Python, Android etc. I have created
-                professional websites, including e-commerce, business, platforms
-                website. Additionally, I possess knowledge in Android app
-                development. My passion lies in continuously learning and
-                staying updated with the latest web technologies.
+                I am a web developer with experience in both front-end and back-end development using PHP, Python, and Android. I have built professional websites, including e-commerce, business, and platform sites, and also have knowledge in Android app development. Passionate about learning, I continuously stay updated with the latest web technologies.
+
               </p>
               <div class="row">
                 <div class="col-lg-6">
@@ -426,10 +435,6 @@
                     <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong>Birthday:</strong> <span>18 June 2001</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Website:</strong> <span>None</span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
@@ -443,10 +448,7 @@
                 </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>25</span>
-                    </li>
+
                     <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong>Degree:</strong>
@@ -501,7 +503,7 @@
               <h4 class="resume-title">Suvastu Properties Ltd.</h4>
 
               <div class="resume-item pb-0">
-                <h4>Executive, Technology - Software</h4>
+                <h4 class="text-light">Executive, Technology - Software</h4>
                 <h5>December 2, 2023 - Present | Full Time</h5>
                 <p>
                   <em
@@ -547,7 +549,7 @@
 
             <div class="col-lg-6 mt-5" data-aos="fade-up" data-aos-delay="200">
               <div class="resume-item mt-5">
-                <h4>Backend Developer | Nandi Food Company</h4>
+                <h4 class="text-light">Backend Developer | Nandi Food Company</h4>
                 <h5>April 2023 – August 2024 | Part Time (remote)</h5>
                 <p>
                   <em
@@ -573,7 +575,7 @@
               <!-- Edn Resume Item -->
 
               <div class="resume-item">
-                <h4>IT - Intern | Iconic Engineering Limited</h4>
+                <h4 class="text-light">IT - Intern | Iconic Engineering Limited</h4>
                 <h5>July 2023 – September 2023</h5>
                 <p>
                   <em
